@@ -61,3 +61,6 @@ Siga estas instruções na sua máquina local.
 - Em "Build and deployment", selecione **GitHub Actions** no menu "Source".
 
 O site estará online em alguns minutos. O link aparecerá nessa mesma página.
+
+# Gest-o-Escolar
+site de gestão escolar
