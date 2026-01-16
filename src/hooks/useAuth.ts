@@ -2,8 +2,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
-import { firebaseApp } from '@/firebase/config'; // Corrected import path
+import { onAuthStateChanged, User } from 'firebase/auth';
+import { auth } from '@/firebase'; // Import the initialized auth instance
 
 // A simple client-side hook to get the current user's auth state.
 // This will only run in the browser, avoiding build-time errors.
@@ -12,7 +12,7 @@ export function useAuth() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const auth = getAuth(firebaseApp);
+    // The auth instance is imported directly and ready to use.
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setUser(user);
       setLoading(false);
