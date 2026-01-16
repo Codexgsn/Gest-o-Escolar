@@ -1,6 +1,6 @@
 'use client';
 
-import NewReservationForm from "@/components/reservations/new-reservation-form";
+import { NewReservationForm } from "@/components/reservations/new-reservation-form";
 
 export default function NewReservationPage() {
   return (
