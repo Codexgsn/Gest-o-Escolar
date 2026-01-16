@@ -4,13 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 9003",
-    "genkit:dev": "echo 'Genkit scripts temporarily disabled'",
-    "genkit:watch": "echo 'Genkit scripts temporarily disabled'",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit",
-    "seed": "node -r dotenv/config scripts/seed.js"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -29,6 +26,7 @@
     "@radix-ui/react-scroll-area": "^1.2.3",
     "@radix-ui/react-select": "^2.1.6",
     "@radix-ui/react-separator": "^1.1.2",
+    "react-hook-form": "^7.52.1",
     "@radix-ui/react-slider": "^1.2.3",
     "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-switch": "^1.1.0",
@@ -42,7 +40,9 @@
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "embla-carousel-react": "^8.1.5",
+
     "firebase": "^12.7.0",
+
     "framer-motion": "^11.2.12",
     "gh-pages": "^6.3.0",
     "lucide-react": "^0.395.0",
