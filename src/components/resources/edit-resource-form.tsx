@@ -42,7 +42,7 @@ interface EditResourceFormProps {
 export function EditResourceForm({ resource, availableTags }: EditResourceFormProps) {
   const router = useRouter()
   const { toast } = useToast()
-  const currentUserId = 'simulated-admin-id';
+  const currentUserId = '00000000-0000-0000-0000-000000000000'; // Placeholder UUID
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

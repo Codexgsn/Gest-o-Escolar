@@ -42,7 +42,7 @@ export function NewResourceForm({ availableTags }: NewResourceFormProps) {
   const { toast } = useToast()
   
   // A simulated user ID. In a real app, you'd get this from your auth context.
-  const currentUserId = 'simulated-admin-id';
+  const currentUserId = '00000000-0000-0000-0000-000000000000'; // Placeholder UUID
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),

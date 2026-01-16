@@ -150,3 +150,18 @@ export async function deleteMultipleUsersAction(userIds: string[], currentUserId
         return { success: false, message: "Falha ao excluir usuários." };
     }
 }
+
+// --- Password Reset ---
+export async function resetPasswordAction(email: string) {
+  // In a real app, you would:
+  // 1. Verify the user with this email exists.
+  // 2. Generate a secure, single-use token and save it with an expiration date.
+  // 3. Send an email to the user with a link containing the token.
+  console.log(`Password reset requested for ${email}.`);
+
+  // For now, we'll just simulate a successful response.
+  return { 
+    success: true, 
+    message: "Se um usuário com este email existir, um link de redefinição de senha foi enviado."
+  };
+}
